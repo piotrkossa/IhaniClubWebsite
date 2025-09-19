@@ -1,11 +1,7 @@
 @import "tailwindcss";
 
 .bg-primary {
-    background-color: #292926;
-}
-
-.bg-secondary {
-    @apply bg-gradient-to-tr from-secondary-1 via-secondary-2 to-secondary-3
+    @apply bg-gray-900;
 }
 
 .text-primary {
@@ -14,17 +10,26 @@
 
 
 .btn-dashboard {
-@apply inline-block bg-gradient-to-bl from-yellow-300 via-yellow-400 to-yellow-500 text-white font-semibold px-4 py-2 rounded-xl shadow-lg
+@apply inline-block bg-gradient-to-bl from-sky-300 via-sky-400 to-sky-500 text-white font-semibold px-4 py-2 rounded-xl shadow-lg
         transition transform duration-300
         translate-y-0
-        hover:shadow-yellow-400/30 
+        hover:shadow-blue-400/30 
         hover:-translate-y-1.5
         hover:scale-102
         will-change-transform
 }
 
+.scale-on-hover {
+    @apply
+        transform
+        scale-100
+        transition-transform duration-300
+        hover:scale-105
+        will-change-transform
+}
+
 .basic-window {
-    @apply bg-gradient-to-bl from-yellow-500 via-yellow-400 to-yellow-300 p-6 rounded-2xl max-w-screen-md  mx-auto
+    @apply bg-gradient-to-bl from-sky-500 via-sky-400 to-sky-300 p-6 rounded-2xl max-w-screen-md  mx-auto
 }
 
 
@@ -32,4 +37,16 @@
     --color-secondary-1: #1d1d1b;
     --color-secondary-2: #383834;
     --color-secondary-3: #1d1d1b;
+}
+
+.mask-ihani {
+  -webkit-mask-image: url('/src/assets/icon.png');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: url('/src/assets/icon.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
 }
