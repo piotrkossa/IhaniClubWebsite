@@ -5,7 +5,7 @@
 }
 
 .bg-secondary {
-    background-color: #1d1d1b;
+    @apply bg-gradient-to-tr from-secondary-1 via-secondary-2 to-secondary-3
 }
 
 .text-primary {
@@ -21,4 +21,15 @@
         hover:-translate-y-1.5
         hover:scale-102
         will-change-transform
+}
+
+.basic-window {
+    @apply bg-gradient-to-bl from-yellow-500 via-yellow-400 to-yellow-300 p-6 rounded-2xl max-w-screen-md  mx-auto
+}
+
+
+@theme {
+    --color-secondary-1: #1d1d1b;
+    --color-secondary-2: #383834;
+    --color-secondary-3: #1d1d1b;
 }
