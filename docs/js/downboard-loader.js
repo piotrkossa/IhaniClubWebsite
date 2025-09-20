@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch('./../downboard.html')
+  fetch('./downboard.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('downboard-container').innerHTML = html;
