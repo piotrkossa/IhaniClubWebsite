@@ -28,6 +28,26 @@
         will-change-transform
 }
 
+@layer utilities {
+  @keyframes cyber-glow {
+    0%, 100% {
+      text-shadow: 0 0 8px rgba(255,255,255,0.3),
+                   0 0 16px rgba(255,255,255,0.1),
+                   0 0 24px rgba(255,255,255,0.1);
+    }
+    50% {
+      text-shadow: 0 0 16px rgba(255,255,255,0.5),
+                   0 0 32px rgba(255,255,255,0.4),
+                   0 0 48px rgba(255,255,255,0.1);
+    }
+  }
+
+  .cyber-glow {
+    animation: cyber-glow 1.5s infinite alternate;
+  }
+}
+
+
 .basic-window {
     @apply bg-gradient-to-bl from-sky-500 via-sky-400 to-sky-300 p-6 rounded-2xl max-w-screen-md  mx-auto
 }
