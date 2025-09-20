@@ -28,6 +28,33 @@
         will-change-transform
 }
 
+.scale-on-hover-x115 {
+    @apply
+        transform
+        scale-100
+        transition-transform duration-300
+        hover:scale-115
+        will-change-transform
+}
+
+
+@layer utilities {
+  @keyframes pulse-scale {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .animate-pulse-scale {
+    animation: pulse-scale 1.5s ease-in-out infinite;
+  }
+}
+
+
+
 @layer utilities {
   @keyframes cyber-glow {
     0%, 100% {
@@ -47,6 +74,30 @@
   }
 }
 
+@layer utilities {
+  @keyframes cyber-glow-lite {
+    0%, 100% {
+      text-shadow: 0 0 6px rgba(255,255,255,0.15),
+                  0 0 12px rgba(255,255,255,0.08),
+                  0 0 18px rgba(255,255,255,0.05);
+    }
+    50% {
+      text-shadow: 0 0 12px rgba(255,255,255,0.2),
+                  0 0 24px rgba(255,255,255,0.12),
+                  0 0 36px rgba(255,255,255,0.08);
+    }
+  }
+
+
+
+  .cyber-glow-lite {
+    animation: cyber-glow-lite 1.5s infinite alternate;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .kalam-regular {
   font-family: "Kalam", cursive;
@@ -56,7 +107,7 @@
 
 
 .basic-window {
-    @apply bg-gradient-to-bl from-sky-500 via-sky-400 to-sky-300 p-6 rounded-2xl max-w-screen-md  mx-auto
+    @apply bg-gradient-to-bl from-sky-500 via-sky-400 to-sky-300 p-6 rounded-2xl max-w-screen-md  mx-auto overflow-hidden
 }
 
 

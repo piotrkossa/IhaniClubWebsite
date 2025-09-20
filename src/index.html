@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="flex flex-col w-screen h-screen bg-primary">
+<body class="flex flex-col w-screen h-screen bg-primary cursor-default">
     <div data-aos-delay="1000" data-aos="fade-down" id="dashboard-container" class="p-2"></div>
 
-    <main class="flex-1 p-6 bg-primary">
+    <main class="flex-1 p-6 bg-primary text-center">
         <header class="mb-100 mt-55 text-center">
             <div data-aos="zoom-in" class="flex justify-center mt-16">
                 <div class="overflow-hidden w-76 h-76">
@@ -25,10 +25,23 @@
             <p data-aos-delay="1000" data-aos="fade-up" class="mt-10 text-xl text-gray-300 font-semibold lg:text-xl cyber-glow">
                 We are a community of hackers who love coding!
             </p>
+
+        <div data-aos="zoom-in" data-aos-delay="2000">
+        <div id="scroll-button" data-scroll="1000" class="mt-20 animate-pulse-scale"></div>
+        </div>
+
         </header>
-        <div class="grid grid-cols-3 gap-40 px-25 mb-200">
-            <div class="basic-window">
-                <h2 class="text-2xl font-extrabold mb-4 text-white">About the Club</h2>
+
+        <div id="about" class="flex justify-center mb-35 bg-gradient-to-br from-white via-gray-300 to-gray-400 bg-clip-text text-transparent cyber-glow-lite" data-aos="fade-down">
+            <h1 class="text-6xl font-bold">
+                About Us
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)]">
+            <div data-aos="fade-right">
+            <div class="basic-window scale-on-hover-x115">
+                <h2 class="text-2xl font-extrabold mb-4 text-white">What is Ihani club?</h2>
                 <p class="text-gray-700 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet
                 facilisis urna. Praesent euismod libero in neque molestie et elementum
@@ -36,8 +49,11 @@
                 pharetra nisi, ut efficitur nisi orci id massa.
                 </p>
             </div>
-            <div class="basic-window">
-                <h2 class="text-2xl font-extrabold mb-4 text-white">About the Club</h2>
+            </div>
+            
+            <div data-aos="zoom-in">
+            <div class="basic-window scale-on-hover-x115">
+                <h2 class="text-2xl font-extrabold mb-4 text-white">Who is a hacker?</h2>
                 <p class="text-gray-700 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet
                 facilisis urna. Praesent euismod libero in neque molestie et elementum
@@ -45,16 +61,87 @@
                 pharetra nisi, ut efficitur nisi orci id massa.
                 </p>
             </div>
-            <div class="basic-window">
-                <h2 class="text-2xl font-extrabold mb-4 text-white">About the Club</h2>
+            </div>
+
+            <div data-aos="fade-left">
+            <div class="basic-window scale-on-hover-x115">
+                <h2 class="text-2xl font-extrabold mb-4 text-white">Where do we meet?</h2>
                 <p class="text-gray-700 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet
                 facilisis urna. Praesent euismod libero in neque molestie et elementum
                 nisi cursus. Cras pulvinar, metus at sollicitudin sollicitudin, leo arcu
                 pharetra nisi, ut efficitur nisi orci id massa.
                 </p>
+            </div>
             </div>
         </div>
+
+        <div data-aos="zoom-in" data-aos-delay="1000">
+        <div id="scroll-button" data-scroll="1000" class="mt-20 animate-pulse-scale"></div>
+        </div>
+    
+
+        <div class="flex justify-center mb-35 bg-gradient-to-br from-white via-gray-300 to-gray-400 bg-clip-text text-transparent cyber-glow-lite mt-100" data-aos="fade-down">
+            <h1 class="text-6xl font-bold">
+                Our Leaders
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)]">
+            <div data-aos="fade-right">
+            <div class="basic-window scale-on-hover-x115">
+                <div class="flex items-center justify-between p-4">
+                    <div class="text-left mr-10">
+                        <h2 class="text-4xl font-extrabold mb-4 text-white">Piotr</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                        No, I am not the cat in this photo.
+                        </p>
+                </div>
+                    <img src="assets/peter.jpg" class="w-40 max-h-full rounded-2xl object-cover">
+                </div>
+            </div>
+            </div>
+
+            <div data-aos="fade-left">
+            <div class="basic-window scale-on-hover-x115">
+                <div class="flex items-center justify-between p-4">
+                    <div class="text-left mr-10">
+                        <h2 class="text-4xl font-extrabold mb-4 text-white">Piotr</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                        No, I am not the cat in this photo.
+                        </p>
+                </div>
+                    <img src="assets/peter.jpg" class="w-40 max-h-full rounded-2xl object-cover">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="1000">
+        <div id="scroll-button" data-scroll="1200" class="mt-20 animate-pulse-scale"></div>
+        </div>
+
+        <div class="flex justify-center mb-35 pb-3 bg-gradient-to-br from-white via-gray-300 to-gray-400 bg-clip-text text-transparent cyber-glow-lite mt-120" data-aos="fade-down">
+            <h1 class="text-6xl font-bold">
+                Our Projects
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)]">
+            <div data-aos="zoom-in">
+            <div class="basic-window scale-on-hover-x115">
+                <div class="flex items-center justify-between p-4">
+                    <div class="text-left">
+                        <h2 class="text-4xl font-extrabold mb-4 text-white">Nothing here (yet)</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                        ;D
+                        </p>
+                    </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div data-aos="fade-down" id="downboard-container" class="p-2 mt-70"></div>
     </main>
 
 
@@ -64,9 +151,15 @@
             duration: 1000,
             once: true,
         });
+
+        window.addEventListener('load', () => {
+            window.scrollTo(0, 0);
+        });
     </script>
 
     <script src="/src/js/dashboard-loader.js"></script>
+    <script src="/src/js/scroll-button.js"></script>
+    <script src="/src/js/downboard-loader.js"></script>
 </body>
 
 </html>
