@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch('/docs/dashboard.html')
+  fetch('./../dashboard.html')
     .then(response => response.text())
     .then(html => {
       document.getElementById('dashboard-container').innerHTML = html;
