@@ -10,7 +10,7 @@
 
 
 .btn-dashboard {
-@apply inline-block bg-gradient-to-bl from-sky-300 via-sky-400 to-sky-500 text-white font-semibold px-4 py-2 rounded-xl shadow-lg
+@apply inline-block bg-gradient-to-bl from-sky-300 via-sky-400 to-sky-500 text-white font-semibold text-lg px-5 py-2 rounded-xl shadow-lg
         transition transform duration-300
         translate-y-0
         hover:shadow-blue-400/30 
@@ -45,6 +45,13 @@
   .cyber-glow {
     animation: cyber-glow 1.5s infinite alternate;
   }
+}
+
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 

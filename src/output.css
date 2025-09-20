@@ -19,6 +19,8 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-md: 48rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -337,6 +339,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .pt-2\.5 {
+    padding-top: calc(var(--spacing) * 2.5);
+  }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
@@ -447,8 +452,10 @@
   --tw-gradient-stops: var(--tw-gradient-via-stops);
   --tw-gradient-to: var(--color-sky-500);
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  padding-inline: calc(var(--spacing) * 4);
+  padding-inline: calc(var(--spacing) * 5);
   padding-block: calc(var(--spacing) * 2);
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: var(--color-white);
@@ -516,6 +523,11 @@
   .cyber-glow {
     animation: cyber-glow 1.5s infinite alternate;
   }
+}
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .basic-window {
   margin-inline: auto;
