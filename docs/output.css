@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-50: oklch(97.1% 0.013 17.38);
     --color-sky-300: oklch(82.8% 0.111 230.318);
     --color-sky-400: oklch(74.6% 0.16 232.661);
     --color-sky-500: oklch(68.5% 0.169 237.323);
@@ -198,6 +197,9 @@
   }
 }
 @layer utilities {
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -206,9 +208,6 @@
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
-  }
-  .mt-55 {
-    margin-top: calc(var(--spacing) * 55);
   }
   .mt-70 {
     margin-top: calc(var(--spacing) * 70);
@@ -231,38 +230,8 @@
   .mb-35 {
     margin-bottom: calc(var(--spacing) * 35);
   }
-  .mb-100 {
-    margin-bottom: calc(var(--spacing) * 100);
-  }
-  .mb-\[clamp\(4rem\,13vw\,25rem\)\] {
-    margin-bottom: clamp(4rem, 13vw, 25rem);
-  }
-  .mb-\[clamp\(6rem\,13vw\,25rem\)\] {
-    margin-bottom: clamp(6rem, 13vw, 25rem);
-  }
-  .mb-\[clamp\(8rem\,13vw\,25rem\)\] {
-    margin-bottom: clamp(8rem, 13vw, 25rem);
-  }
-  .mb-\[clamp\(10rem\,13vw\,25rem\)\] {
-    margin-bottom: clamp(10rem, 13vw, 25rem);
-  }
-  .mb-\[clamp\(11rem\,13vw\,25rem\)\] {
-    margin-bottom: clamp(11rem, 13vw, 25rem);
-  }
-  .mb-\[clamp\(13rem\,13vw\,25rem\)\] {
-    margin-bottom: clamp(13rem, 13vw, 25rem);
-  }
-  .mb-\[clamp\(16rem\,13vw\,25rem\)\] {
-    margin-bottom: clamp(16rem, 13vw, 25rem);
-  }
-  .mb-\[clamp\(16rem\,14vw\,25rem\)\] {
-    margin-bottom: clamp(16rem, 14vw, 25rem);
-  }
   .mb-\[clamp\(16rem\,16vw\,25rem\)\] {
     margin-bottom: clamp(16rem, 16vw, 25rem);
-  }
-  .mb-\[clamp\(18rem\,13vw\,25rem\)\] {
-    margin-bottom: clamp(18rem, 13vw, 25rem);
   }
   .flex {
     display: flex;
@@ -285,11 +254,8 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
-  .h-76 {
-    height: calc(var(--spacing) * 76);
-  }
-  .h-80 {
-    height: calc(var(--spacing) * 80);
+  .h-40 {
+    height: calc(var(--spacing) * 40);
   }
   .h-82 {
     height: calc(var(--spacing) * 82);
@@ -300,29 +266,11 @@
   .h-screen {
     height: 100vh;
   }
-  .max-h-10 {
-    max-height: calc(var(--spacing) * 10);
-  }
-  .max-h-40 {
-    max-height: calc(var(--spacing) * 40);
-  }
-  .max-h-50 {
-    max-height: calc(var(--spacing) * 50);
-  }
-  .max-h-full {
-    max-height: 100%;
-  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
-  }
-  .w-76 {
-    width: calc(var(--spacing) * 76);
-  }
-  .w-80 {
-    width: calc(var(--spacing) * 80);
   }
   .w-82 {
     width: calc(var(--spacing) * 82);
@@ -336,20 +284,26 @@
   .w-screen {
     width: 100vw;
   }
-  .max-w-10 {
-    max-width: calc(var(--spacing) * 10);
-  }
   .max-w-40 {
     max-width: calc(var(--spacing) * 40);
   }
-  .max-w-50 {
-    max-width: calc(var(--spacing) * 50);
+  .min-w-\[200px\] {
+    min-width: 200px;
+  }
+  .min-w-\[300px\] {
+    min-width: 300px;
   }
   .flex-1 {
     flex: 1;
   }
   .flex-none {
     flex: none;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -372,9 +326,6 @@
   .grid-cols-\[repeat\(auto-fit\,minmax\(200px\,1fr\)\)\] {
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(320px\,1fr\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -386,6 +337,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-stretch {
+    align-items: stretch;
   }
   .justify-between {
     justify-content: space-between;
@@ -409,9 +363,6 @@
       margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
     }
-  }
-  .gap-x-10 {
-    column-gap: calc(var(--spacing) * 10);
   }
   .space-x-0 {
     :where(& > :not(:last-child)) {
@@ -446,9 +397,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .bg-red-50 {
-    background-color: var(--color-red-50);
   }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
@@ -496,14 +444,8 @@
     --tw-gradient-to: var(--color-gray-900);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .bg-cover {
-    background-size: cover;
-  }
   .bg-clip-text {
     background-clip: text;
-  }
-  .bg-center {
-    background-position: center;
   }
   .mask-repeat {
     mask-repeat: repeat;
@@ -513,12 +455,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .object-fill {
-    object-fit: fill;
-  }
-  .object-scale-down {
-    object-fit: scale-down;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -816,11 +752,6 @@
   .md\:justify-end {
     @media (width >= 48rem) {
       justify-content: flex-end;
-    }
-  }
-  .md\:gap-40 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 40);
     }
   }
   .md\:space-x-6 {

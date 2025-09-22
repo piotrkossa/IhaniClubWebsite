@@ -12,17 +12,17 @@
 </head>
 
 <body class="flex flex-col w-screen h-screen bg-primary cursor-default">
-    <div data-aos-delay="1000" data-aos="fade-down" id="dashboard-container" class="p-2"></div>
+    <div data-aos-delay="2000" data-aos="fade-down" id="dashboard-container" class="p-2"></div>
 
     <main class="flex-1 p-6 bg-primary text-center">
         <header class="mb-[clamp(16rem,16vw,25rem)] mt-[clamp(2rem,11.5vw,13.75rem)] text-center">
-            <div data-aos="zoom-in" class="flex justify-center mt-16">
+            <div data-aos-delay="1000" data-aos="zoom-in" class="flex justify-center mt-16">
                 <div class="overflow-hidden w-82 h-82 p-3">
                     <div class="w-full h-full bg-gradient-to-b from-white via-gray-300 to-gray-400 mask-ihani transform scale-100 transition-transform duration-300 hover:scale-105"></div>
                 </div>
             </div>
             
-            <p data-aos-delay="1000" data-aos="fade-up" class="mt-10 text-xl text-gray-300 font-semibold lg:text-xl cyber-glow">
+            <p data-aos-delay="2000" data-aos="fade-up" class="mt-10 text-xl text-gray-300 font-semibold lg:text-xl cyber-glow">
                 We are a community of hackers who love coding!
             </p>
 
@@ -38,42 +38,66 @@
             </h1>
         </div>
 
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)]">
-            <div data-aos="fade-right">
-            <div class="basic-window scale-on-hover-x115">
-                <h2 class="text-2xl font-extrabold mb-4 text-white">What is Ihani club?</h2>
-                <p class="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet
-                facilisis urna. Praesent euismod libero in neque molestie et elementum
-                nisi cursus. Cras pulvinar, metus at sollicitudin sollicitudin, leo arcu
-                pharetra nisi, ut efficitur nisi orci id massa.
-                </p>
+        <div class="flex flex-wrap gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)] items-stretch">
+        
+        <div class="flex-1 min-w-[200px]" data-aos="fade-right">
+            <div class="basic-window scale-on-hover-x115 flex flex-col justify-between h-full">
+                <h2 class="text-2xl font-extrabold mb-4 text-white">
+                What is Ihani club?</h2>
+                <p class="text-gray-700 leading-relaxed font-semibold">
+                Ihani Club is a friendly and engaging space for anyone interested in coding. Piotr leads app and web development sessions, 
+                while Ryszard focus on algorithms and data structures. We share knowledge, exchange ideas, and help each other solve problems. 
+                Sometimes we have pizza during our meetups. The club is open to everyone - whether you`re just starting out or already have 
+                experience in programming ;D.
+            </p>
+            <h2 class="text-2xl font-extrabold text-white mt-8">
+                Join us for coding & pizza! 🍕</h2>
             </div>
-            </div>
-            
-            <div data-aos="zoom-in">
-            <div class="basic-window scale-on-hover-x115">
-                <h2 class="text-2xl font-extrabold mb-4 text-white">Who is a hacker?</h2>
-                <p class="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet
-                facilisis urna. Praesent euismod libero in neque molestie et elementum
-                nisi cursus. Cras pulvinar, metus at sollicitudin sollicitudin, leo arcu
-                pharetra nisi, ut efficitur nisi orci id massa.
-                </p>
-            </div>
-            </div>
+        </div>
 
-            <div data-aos="fade-left">
-            <div class="basic-window scale-on-hover-x115">
-                <h2 class="text-2xl font-extrabold mb-4 text-white">Where do we meet?</h2>
-                <p class="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet
-                facilisis urna. Praesent euismod libero in neque molestie et elementum
-                nisi cursus. Cras pulvinar, metus at sollicitudin sollicitudin, leo arcu
-                pharetra nisi, ut efficitur nisi orci id massa.
+        <div class="flex-1 min-w-[200px]" data-aos="zoom-in">
+            <div class="basic-window scale-on-hover-x115 flex flex-col justify-between h-full">
+                <h2 class="text-2xl font-extrabold mb-4 text-white">
+                Who is a hacker?</h2>
+                <p class="text-gray-700 leading-relaxed font-semibold">
+                A hacker is not someone who breaks into systems, but a coding enthusiast - someone who loves to explore, 
+                experiment, and create with code. Hackers are curious problem-solvers, always learning new techniques, 
+                improving their skills, and sharing knowledge with others. Being a hacker is about creativity, curiosity, 
+                and passion for programming, not breaking rules.
+            </p>
+            <h2 class="text-2xl font-extrabold text-white mt-8">
+                Become a hacker (the cool kind)!</h2>
+            </div>
+        </div>
+
+        <div class="flex-1 min-w-[200px]" data-aos="zoom-in">
+            <div class="basic-window scale-on-hover-x115 flex flex-col justify-between h-full">
+                <h2 class="text-2xl font-extrabold mb-4 text-white">
+                Where do we meet?
+                </h2>
+                <p class="text-gray-700 leading-relaxed font-semibold">
+                We meet in the school`s (Akademickie Liceum Ogólnokształcące Politechniki Białostockiej) computer lab in the afternoon (We will specify exact date soon ;D). 
+                This is where we work together, share knowledge and build new projects while learning and having fun.
                 </p>
+                <h2 class="text-2xl font-extrabold text-white mt-8">
+                Find us in the lab 🚀
+                </h2>
             </div>
+        </div>
+        <div class="flex-1 min-w-[200px]" data-aos="fade-left">
+            <div class="basic-window scale-on-hover-x115 flex flex-col justify-between h-full">
+                <h2 class="text-2xl font-extrabold mb-4 text-white">
+                What is Hack Club?</h2>
+                <p class="text-gray-700 leading-relaxed font-semibold">
+                Hack Club is a global nonprofit network of high school makers & student-led coding clubs where young people build 
+                the agency, the network, & the technical talent to think big & do big things in the world. Founded in 2014 by 
+                16-year-old Zach Latta, Hack Clubs are now in nearly 400 high schools with 10,000 students each year.
+            </p>
+                <h2 class="text-2xl font-extrabold text-white mt-8">
+                Explore Hack Club worldwide 🌍</h2>
             </div>
+        </div>
+
         </div>
 
         <div data-aos="zoom-in" data-aos-delay="1000">
@@ -87,41 +111,51 @@
             </h1>
         </div>
 
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)]">
-            <div data-aos="fade-right">
-            <div class="basic-window scale-on-hover-x115">
-                <div class="flex items-center justify-between p-4">
-                    <div class="text-left mr-10">
-                        <h2 class="text-4xl font-extrabold mb-4 text-white">Piotr</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                        No, I am not the cat in this photo.
-                        </p>
-                    </div>
-                    
-                    <div class="rounded-2xl overflow-hidden w-full h-full max-w-40">
-                    <img src="./assets/peter.jpg" class="w-full h-full object-contain">
-                    </div>
-                </div>
-            </div>
-            </div>
 
-            <div data-aos="fade-left">
-            <div class="basic-window scale-on-hover-x115">
-                <div class="flex items-center justify-between p-4">
-                    <div class="text-left mr-10">
-                        <h2 class="text-4xl font-extrabold mb-4 text-white">Piotr</h2>
-                        <p class="text-gray-700 leading-relaxed">
-                        No, I am not the cat in this photo.
-                        </p>
-                    </div>
-                    
-                    <div class="rounded-2xl overflow-hidden w-full h-full max-w-40">
-                    <img src="./assets/peter.jpg" class="w-full h-full object-contain">
-                    </div>
+        <div class="flex flex-wrap gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)] items-stretch">
+        
+        <div class="flex-1 min-w-[300px]" data-aos="fade-right">
+            <div class="basic-window scale-on-hover-x115 h-full flex flex-col">
+            <div class="flex items-center justify-between p-4 h-full">
+                
+                <div class="text-left mr-10 flex-1">
+                <h2 class="text-4xl font-extrabold mb-4 text-white">Piotr</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    I am 17 years old. I enjoy programming and building applications in .NET, creating games in Unity and Godot, and I also feel confident using Python. 
+                    I am always looking for ways to improve my skills and try out new ideas. And no, I am not the cat in this photo.
+                </p>
                 </div>
+                
+                <div class="rounded-2xl overflow-hidden w-40 h-40 flex-shrink-0">
+                <img src="./assets/peter.jpg" class="w-full h-full object-cover">
+                </div>
+            
             </div>
             </div>
         </div>
+
+        <div class="flex-1 min-w-[300px]" data-aos="fade-left">
+            <div class="basic-window scale-on-hover-x115 h-full flex flex-col">
+            <div class="flex items-center justify-between p-4 h-full">
+                
+                <div class="text-left mr-10 flex-1">
+                <h2 class="text-4xl font-extrabold mb-4 text-white">Ryszard</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    I`m 18 years old and a student at ALOPB in the final year. I love music, especially rock, and I also play saxophone and bass guitar. 
+                    Besides music, I`m interested in algorithms and programming, and I enjoy exploring new coding challenges.
+                </p>
+                </div>
+                
+                <div class="rounded-2xl overflow-hidden w-40 h-40 flex-shrink-0">
+                <img src="./assets/richard.png" class="w-full h-full object-cover">
+                </div>
+            
+            </div>
+            </div>
+        </div>
+
+        </div>
+
         <div data-aos="zoom-in" data-aos-delay="1000">
         <div id="scroll-button" data-scroll="1200" class="mt-20 animate-pulse-scale"></div>
         </div>
