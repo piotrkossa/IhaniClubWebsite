@@ -15,9 +15,9 @@
     <div data-aos-delay="1000" data-aos="fade-down" id="dashboard-container" class="p-2"></div>
 
     <main class="flex-1 p-6 bg-primary text-center">
-        <header class="mb-100 mt-55 text-center">
+        <header class="mb-[clamp(16rem,16vw,25rem)] mt-[clamp(2rem,11.5vw,13.75rem)] text-center">
             <div data-aos="zoom-in" class="flex justify-center mt-16">
-                <div class="overflow-hidden w-76 h-76">
+                <div class="overflow-hidden w-82 h-82 p-3">
                     <div class="w-full h-full bg-gradient-to-b from-white via-gray-300 to-gray-400 mask-ihani transform scale-100 transition-transform duration-300 hover:scale-105"></div>
                 </div>
             </div>
@@ -96,8 +96,11 @@
                         <p class="text-gray-700 leading-relaxed">
                         No, I am not the cat in this photo.
                         </p>
-                </div>
-                    <img src="./assets/peter.jpg" class="w-40 max-h-full rounded-2xl object-cover">
+                    </div>
+                    
+                    <div class="rounded-2xl overflow-hidden w-full h-full max-w-40">
+                    <img src="./assets/peter.jpg" class="w-full h-full object-contain">
+                    </div>
                 </div>
             </div>
             </div>
@@ -110,8 +113,11 @@
                         <p class="text-gray-700 leading-relaxed">
                         No, I am not the cat in this photo.
                         </p>
-                </div>
-                    <img src="./assets/peter.jpg" class="w-40 max-h-full rounded-2xl object-cover">
+                    </div>
+                    
+                    <div class="rounded-2xl overflow-hidden w-full h-full max-w-40">
+                    <img src="./assets/peter.jpg" class="w-full h-full object-contain">
+                    </div>
                 </div>
             </div>
             </div>
@@ -148,12 +154,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
+            offset: 200,
             duration: 1000,
             once: true,
         });
 
         window.addEventListener('load', () => {
             window.scrollTo(0, 0);
+            AOS.refresh();
         });
     </script>
 
