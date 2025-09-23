@@ -128,3 +128,7 @@ html {
   mask-position: center;
   mask-size: contain;
 }
+
+html, body {
+    overflow-x: hidden;
+}

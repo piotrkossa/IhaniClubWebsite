@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="flex flex-col w-screen h-screen bg-primary cursor-default">
+<body class="flex flex-col bg-primary cursor-default overflow-x-hidden">
     <div data-aos-delay="2000" data-aos="fade-down" id="dashboard-container" class="p-2"></div>
 
     <main class="flex-1 p-6 bg-primary text-center">
@@ -111,50 +111,86 @@
             </h1>
         </div>
 
-
-        <div class="flex flex-wrap gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)] items-stretch">
+    <div class="flex flex-wrap gap-[clamp(0.5rem,7vw,7rem)] px-[clamp(0.2rem,7vw,7rem)] items-stretch justify-between">
         
-        <div class="flex-1 min-w-[300px]" data-aos="fade-right">
-            <div class="basic-window scale-on-hover-x115 h-full flex flex-col">
-            <div class="flex items-center justify-between p-4 h-full">
-                
-                <div class="text-left mr-10 flex-1">
-                <h2 class="text-4xl font-extrabold mb-4 text-white">Piotr</h2>
-                <p class="text-gray-700 leading-relaxed">
-                    I am 17 years old. I enjoy programming and building applications in .NET, creating games in Unity and Godot, and I also feel confident using Python. 
-                    I am always looking for ways to improve my skills and try out new ideas. And no, I am not the cat in this photo.
-                </p>
+        <div class="flex-1 min-w-[280px]" data-aos="fade-right">
+            <div class="basic-window scale-on-hover-x115 h-full p-4">
+
+                <div class="hidden xl:block">
+                    <h2 class="text-4xl font-extrabold text-white mb-4">Piotr</h2>
+                    <div class="flex items-center gap-4">
+                        <p class="text-gray-700 font-semibold leading-relaxed flex-1">
+                            I am 17 years old. I enjoy programming and building applications in .NET, creating games in Unity and Godot,
+                            and I also feel confident using Python. I am always looking for ways to improve my skills and try out new ideas.
+                            And no, I am not the cat in this photo.
+                        </p>
+                        <div class="rounded-2xl overflow-hidden w-32 h-32 flex-shrink-0">
+                            <img src="./assets/peter.jpg" class="w-full h-full object-cover" alt="Piotr">
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="rounded-2xl overflow-hidden w-40 h-40 flex-shrink-0">
-                <img src="./assets/peter.jpg" class="w-full h-full object-cover">
+
+                <div class="block xl:hidden">
+                    <div class="relative overflow-hidden">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Piotr</h2>
+                        <div class="rounded-2xl overflow-hidden w-28 h-28 sm:w-32 sm:h-32 float-right ml-3 mb-3 shape-outside-circle">
+                            <img src="./assets/peter.jpg" class="w-full h-full object-cover" alt="Piotr">
+                        </div>
+                        <p class="text-gray-700 font-semibold leading-relaxed text-justify">
+                            I am 17 years old. I enjoy programming and building applications in .NET, creating games in Unity and Godot,
+                            and I also feel confident using Python. I am always looking for ways to improve my skills and try out new ideas.
+                            And no, I am not the cat in this photo.
+                        </p>
+                        <div class="clear-both"></div>
+                    </div>
                 </div>
-            
-            </div>
             </div>
         </div>
 
-        <div class="flex-1 min-w-[300px]" data-aos="fade-left">
-            <div class="basic-window scale-on-hover-x115 h-full flex flex-col">
-            <div class="flex items-center justify-between p-4 h-full">
-                
-                <div class="text-left mr-10 flex-1">
-                <h2 class="text-4xl font-extrabold mb-4 text-white">Ryszard</h2>
-                <p class="text-gray-700 leading-relaxed">
-                    I`m 18 years old and a student at ALOPB in the final year. I love music, especially rock, and I also play saxophone and bass guitar. 
-                    Besides music, I`m interested in algorithms and programming, and I enjoy exploring new coding challenges.
-                </p>
+
+        <div class="flex-1 min-w-[280px]" data-aos="fade-left">
+            <div class="basic-window scale-on-hover-x115 h-full p-4">
+
+                <div class="hidden xl:block">
+                    <h2 class="text-4xl font-extrabold text-white mb-4">Ryszard</h2>
+                    <div class="flex items-center gap-4">
+                        <p class="text-gray-700 font-semibold leading-relaxed flex-1">
+                            I'm 18 years old and a student at ALOPB in the final year. I love music, especially rock,
+                            and I also play saxophone and bass guitar. Besides music, I'm interested in algorithms and programming,
+                            and I enjoy exploring new coding challenges.
+                        </p>
+                        <div class="rounded-2xl overflow-hidden w-32 h-32 flex-shrink-0">
+                            <img src="./assets/richard.png" class="w-full h-full object-cover" alt="Ryszard">
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="rounded-2xl overflow-hidden w-40 h-40 flex-shrink-0">
-                <img src="./assets/richard.png" class="w-full h-full object-cover">
+
+                <div class="block xl:hidden">
+                    <div class="relative overflow-hidden">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Ryszard</h2>
+                        <div class="rounded-2xl overflow-hidden w-28 h-28 sm:w-32 sm:h-32 float-right ml-3 mb-3 shape-outside-circle">
+                            <img src="./assets/richard.png" class="w-full h-full object-cover" alt="Ryszard">
+                        </div>
+                        <p class="text-gray-700 font-semibold leading-relaxed text-justify">
+                            I'm 18 years old and a student at ALOPB in the final year. I love music, especially rock,
+                            and I also play saxophone and bass guitar. Besides music, I'm interested in algorithms and programming,
+                            and I enjoy exploring new coding challenges.
+                        </p>
+                        <div class="clear-both"></div>
+                    </div>
                 </div>
-            
-            </div>
             </div>
         </div>
 
-        </div>
+    </div>
+
+
+
+
+
+
 
         <div data-aos="zoom-in" data-aos-delay="1000">
         <div id="scroll-button" data-scroll="1200" class="mt-20 animate-pulse-scale"></div>
