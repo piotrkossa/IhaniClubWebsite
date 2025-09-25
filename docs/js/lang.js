@@ -34,15 +34,15 @@
   });
 
   observer.observe(document.body, { childList: true, subtree: true });
-
-    AOS.init({
-        offset: 150,
-        duration: 1000,
-        once: true,
-    });
-
-    window.addEventListener('load', () => {
-        window.scrollTo(0, 0);
-        AOS.refresh();
-    });
 })();
+
+AOS.init({
+    offset: 150,
+    duration: 1000,
+    once: true,
+});
+
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+    AOS.refresh();
+});
