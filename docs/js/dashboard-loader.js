@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (btn) {
         const currentPage = window.location.pathname;
 
-        if (currentPage.includes("announcements.html")) {
+        if (currentPage.includes("announcements")) {
           btn.href = "./index.html";
           btn.textContent = "Home";
           btn.setAttribute("l-pl", "Strona Główna");
