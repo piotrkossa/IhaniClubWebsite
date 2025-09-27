@@ -3,6 +3,7 @@ backend:
   repo: piotrkossa/IhaniClubWebsite
   branch: netlify
   base_url: "https://ihani.pages.dev"
+  auth_endpoint: /api/auth
 
 media_folder: "docs/static/uploads"
 public_folder: "/static/uploads"
