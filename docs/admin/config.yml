@@ -1,0 +1,20 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: netlify
+
+media_folder: "docs/static/uploads"
+public_folder: "/static/uploads"
+
+collections:
+  - name: "announcements"
+    label: "Ogłoszenia"
+    folder: "docs/content/announcements"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - { label: "Treść", name: "body", widget: "text" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Zdjęcie", name: "image", widget: "image", required: false }

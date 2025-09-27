@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihani Announcements</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen bg-primary cursor-default overflow-x-hidden">
+    <div data-aos-offset="0" data-aos="fade-down" id="dashboard-container" class="p-2"></div>
+
+    <main class="flex-1">
+        <div class="flex flex-col justify-center mb-25 bg-gradient-to-br from-white via-gray-300 to-gray-400 bg-clip-text text-transparent cyber-glow-lite pb-4 pt-4 mt-20 text-center" data-aos="zoom-in">
+            <h1 class="text-6xl font-bold" l-pl="Ogłoszenia">
+                Announcements (only in polish, sorry)
+            </h1>
+            <p class="mt-4 animate-pulse-scale" l-pl="Możesz je kliknąć!" data-aos="zoom-in" data-aos-delay="1000">You can click them!</p>
+        </div>
+
+        <div class="grid gap-[clamp(0.5rem,7vw,7rem)] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-[clamp(0.2rem,7vw,7rem)]" id="announcements-list" data-aos="zoom-in" data-aos-delay="1000"></div>
+
+    </main>
+
+
+    <div data-aos-offset="0" data-aos="fade-down" id="downboard-container" class="p-2 mt-30"></div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/dashboard-loader.js"></script>
+    <script src="./js/get-announcements.js"></script>
+    <script src="./js/downboard-loader.js"></script>
+</body>
+
+</html>
