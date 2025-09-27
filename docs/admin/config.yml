@@ -1,7 +1,6 @@
-local_backend: true
-
 backend:
-  name: git-gateway
+  name: github
+  repo: piotrkossa/IhaniClubWebsite
   branch: netlify
 
 media_folder: "docs/static/uploads"
