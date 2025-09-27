@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: piotrkossa/IhaniClubWebsite
   branch: netlify
 
 media_folder: "docs/static/uploads"
