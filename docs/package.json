@@ -4,6 +4,13 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "marked": "^16.3.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./output.css --minify && node js/generate-announcements.js && echo 'Build done'"
   }
 }
