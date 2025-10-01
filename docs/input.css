@@ -53,6 +53,8 @@
     animation: pulse-scale 1.5s ease-in-out infinite;
     will-change: transform;
     transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
@@ -98,6 +100,19 @@
     animation: cyber-glow-lite 1.5s infinite alternate;
   }
 }
+
+
+.animate-pulse-glow {
+  display: inline-block;
+  will-change: transform, text-shadow;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+
+  animation:
+    pulse-scale      1.5s ease-in-out infinite,
+    cyber-glow-lite  1.5s ease-in-out infinite alternate;
+}
+
 
 html {
   scroll-behavior: smooth;
