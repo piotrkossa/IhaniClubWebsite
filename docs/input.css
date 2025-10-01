@@ -106,6 +106,8 @@
   will-change: transform, text-shadow;
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 
   animation:
     pulse-scale      1.5s ease-in-out infinite,
