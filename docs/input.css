@@ -37,45 +37,26 @@
         will-change-transform
 }
 
-
-@layer utilities {
-  @keyframes pulse-scale {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-  }
   
 @layer utilities {
   @keyframes pulse-scale {
     0%, 100% {
-      transform: scale(1);
+      font-size: 1em;
+      line-height: inherit;
     }
     50% {
-      transform: scale(1.1);
+      font-size: 1.1em;
+      line-height: inherit;
     }
   }
   
   .animate-pulse-scale {
     display: inline-block;
-    animation: pulse-scale 1.5s ease-in-out infinite;
-
-    transform: translateZ(0) scale(1);
-    transform-origin: center center;
-
-    backface-visibility: hidden;
-    perspective: 1000px;
-
-    -webkit-font-smoothing: subpixel-antialiased;
+    animation: pulse-scale 2s ease-in-out infinite;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
-    
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
+    text-rendering: optimizeLegibility;
   }
-}
 }
 
 
